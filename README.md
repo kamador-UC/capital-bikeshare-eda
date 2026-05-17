@@ -1,16 +1,16 @@
-# 🚲 Capital Bikeshare — Exploratory Data Analysis (EDA)
+#  Capital Bikeshare — Exploratory Data Analysis (EDA)
 
 Análisis exploratorio de datos del sistema de bicicletas compartidas **Capital Bikeshare** de Washington D.C., utilizando el dataset del mes de septiembre de 2025.
 
 ---
 
-## 📌 Descripción del Proyecto
+##  Descripción del Proyecto
 
 Capital Bikeshare es un sistema público de movilidad urbana con miles de bicicletas distribuidas en estaciones automáticas a lo largo del área metropolitana de Washington D.C. Este proyecto aplica un proceso completo de EDA sobre 625,035 registros de viajes, con el objetivo de descubrir patrones de uso, comportamiento de usuarios y oportunidades de mejora del servicio.
 
 ---
 
-## 🎯 Objetivos
+##  Objetivos
 
 - Comprender la estructura y calidad del dataset
 - Limpiar y transformar los datos para el análisis
@@ -20,7 +20,7 @@ Capital Bikeshare es un sistema público de movilidad urbana con miles de bicicl
 
 ---
 
-## 📁 Estructura del Repositorio
+##  Estructura del Repositorio
 
 ```
 capital-bikeshare-eda/
@@ -39,7 +39,7 @@ capital-bikeshare-eda/
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 | Atributo | Detalle |
 |---|---|
@@ -49,7 +49,7 @@ capital-bikeshare-eda/
 | **Columnas** | 13 |
 | **Archivo** | `202509-capitalbikeshare-tripdata.csv` |
 
-> ⚠️ El archivo de datos no está incluido en este repositorio por su tamaño. Podés descargarlo directamente desde el enlace de arriba o desde [Kaggle](https://www.kaggle.com/).
+>  El archivo de datos no está incluido en este repositorio por su tamaño. Podés descargarlo directamente desde el enlace de arriba o desde [Kaggle](https://www.kaggle.com/).
 
 ### Variables principales
 
@@ -64,7 +64,7 @@ capital-bikeshare-eda/
 
 ---
 
-## 🔧 Herramientas y Tecnologías
+##  Herramientas y Tecnologías
 
 - **Python 3**
 - **Pandas** — manipulación y limpieza de datos
@@ -75,7 +75,7 @@ capital-bikeshare-eda/
 
 ---
 
-## 🧹 Proceso de Limpieza
+##  Proceso de Limpieza
 
 1. **Detección de valores faltantes** — 13–14% de registros sin nombre de estación (imputados como `"Unknown Station"` al conservar coordenadas válidas)
 2. **Eliminación de outliers** — 402 viajes con duración superior a 24 horas
@@ -84,7 +84,7 @@ capital-bikeshare-eda/
 
 ---
 
-## 🛠️ Feature Engineering
+##  Feature Engineering
 
 Variables derivadas creadas para enriquecer el análisis:
 
@@ -99,7 +99,7 @@ Variables derivadas creadas para enriquecer el análisis:
 
 ---
 
-## 📈 Principales Hallazgos
+##  Principales Hallazgos
 
 - **70.1% de los usuarios son miembros** y el 29.9% son casuales
 - **Los usuarios casuales realizan viajes ~2x más largos** que los miembros, sugiriendo uso recreativo vs. laboral
@@ -110,7 +110,7 @@ Variables derivadas creadas para enriquecer el análisis:
 
 ---
 
-## 💡 Oportunidades de Negocio Identificadas
+##  Oportunidades de Negocio Identificadas
 
 - **Expansión de red**: Columbus Circle y New Hampshire Ave tienen demanda extremadamente alta — instalar estaciones adicionales en un radio de 500m podría capturar más usuarios
 - **Tarifas dinámicas en hora pico**: implementar precios diferenciados entre 5–6 PM podría optimizar ingresos y redistribuir la demanda
@@ -119,7 +119,7 @@ Variables derivadas creadas para enriquecer el análisis:
 
 ---
 
-## ▶️ Cómo Ejecutar
+##  Cómo Ejecutar
 
 1. Cloná el repositorio:
    ```bash
@@ -137,7 +137,7 @@ Variables derivadas creadas para enriquecer el análisis:
 
 ---
 
-## ⚠️ Nota Técnica
+##  Nota Técnica
 
 Durante el desarrollo se identificó un bug relacionado con el guardado del CSV intermedio sin el parámetro `index=False`, lo que generaba una columna fantasma de índice al recargar el archivo. Esto distorsionaba las estadísticas descriptivas (el `max` de variables numéricas aparecía como el total de filas). El error fue corregido usando:
 
@@ -147,7 +147,7 @@ df_RAW.to_csv("ds_proyecto2_Kevin_clean_v2.csv", index=False, encoding='utf-8')
 
 ---
 
-## 👤 Autor
+##  Autor
 
 **Kevin Amador Fallas**  
 [GitHub](https://github.com/tu-usuario)
